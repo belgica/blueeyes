@@ -1,0 +1,1 @@
+SinghComments = new Mongo.Collection("singhComments");

@@ -1,0 +1,23 @@
+<head>
+  <title>blueeyes</title>
+</head>
+
+<body>
+  <h1>what does honey singh say?</h1>
+  {{>commentsIn}}
+  {{>commentsOut}}
+</body>
+
+
+<template name="commentsIn">
+   <form class="new-comment">
+        <input type="text" name="text" placeholder="Type to add comments" />
+      </form>
+  <button>Submit</button>
+</template>
+
+<template name="commentsOut">
+   {{#with SinghCommentDictionary}}
+  <p>{{text}} was created at {{createdAt}}</p>
+  {{/with}}
+</template>
